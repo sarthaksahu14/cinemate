@@ -13,7 +13,7 @@ const Batman = () => {
 
     const GetBatman = async () => {
         try {
-            const { data } = await axios.get(`http://www.omdbapi.com/?s=batman&apikey=${import.meta.env.VITE_API_KEY}`);
+            const { data } = await axios.get(`https://www.omdbapi.com/?s=batman&apikey=${import.meta.env.VITE_API_KEY}`);
             setbatman(data.Search);
         } catch (error) {
             console.log("Error: ", error);
