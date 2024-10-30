@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Sidenav = () => {
     return (
-        <div className="w-[40%] lg:w-[20%] h-full border-r-2 border-zinc-400 p-4 lg:px-6 lg:py-4">
+        <div className="w-[40%] lg:w-[20%] h-full border-r-2 border-zinc-400 p-4 lg:px-4 lg:py-2">
             <h1 className="text-xl lg:text-2xl text-white font-bold">
                 <i className="text-[#6556CD] ri-tv-fill mr-2 "></i>
                 <span className="text-xl lg:text-2xl">CineMate</span>
