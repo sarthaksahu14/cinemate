@@ -13,7 +13,7 @@ const Deadpool = () => {
 
     const GetDeadpool = async () => {
         try {
-            const { data } = await axios.get(`http://www.omdbapi.com/?s=deadpool&apikey=${import.meta.env.VITE_API_KEY}`);
+            const { data } = await axios.get(`https://www.omdbapi.com/?s=deadpool&apikey=${import.meta.env.VITE_API_KEY}`);
             setdeadpool(data.Search);
         } catch (error) {
             console.log("Error: ", error);
