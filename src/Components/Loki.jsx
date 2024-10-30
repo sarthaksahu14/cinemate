@@ -14,7 +14,7 @@ const Loki = () => {
 
     const GetLoki = async () => {
         try {
-            const { data } = await axios.get(`http://www.omdbapi.com/?s=loki&apikey=${import.meta.env.VITE_API_KEY}`);
+            const { data } = await axios.get(`https://www.omdbapi.com/?s=loki&apikey=${import.meta.env.VITE_API_KEY}`);
             setloki(data.Search);
         } catch (error) {
             console.log("Error: ", error);
