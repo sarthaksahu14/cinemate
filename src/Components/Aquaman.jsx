@@ -14,7 +14,7 @@ const Aquaman = () => {
 
     const GetAquaman = async () => {
         try {
-            const { data } = await axios.get(`http://www.omdbapi.com/?s=aquaman&apikey=${import.meta.env.VITE_API_KEY}`);
+            const { data } = await axios.get(`https://www.omdbapi.com/?s=aquaman&apikey=${import.meta.env.VITE_API_KEY}`);
             setaquaman(data.Search);
         } catch (error) {
             console.log("Error: ", error);
