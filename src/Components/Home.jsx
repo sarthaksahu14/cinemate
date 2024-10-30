@@ -13,7 +13,7 @@ const Home = () => {
 
     const GetHeaderWallpaper = async () => {
         try {
-            const { data } = await axios.get(`http://www.omdbapi.com/?s=batman&apikey=${import.meta.env.VITE_API_KEY}`);
+            const { data } = await axios.get(`https://www.omdbapi.com/?s=batman&apikey=${import.meta.env.VITE_API_KEY}`);
             let randomdata =
                 data.Search[(Math.random() * data.Search.length).toFixed()];
             setwallpaper(randomdata);
@@ -23,7 +23,7 @@ const Home = () => {
     };
   const GetTrending = async () => {
         try {
-            const { data } = await axios.get(`http://www.omdbapi.com/?s=thor&apikey=${import.meta.env.VITE_API_KEY}`);
+            const { data } = await axios.get(`https://www.omdbapi.com/?s=thor&apikey=${import.meta.env.VITE_API_KEY}`);
             settrending(data.Search);
         } catch (error) {
             console.log("Error: ", error);
