@@ -13,7 +13,7 @@ const Hulk = () => {
 
     const GetHulk = async () => {
         try {
-            const { data } = await axios.get(`http://www.omdbapi.com/?s=hulk&apikey=${import.meta.env.VITE_API_KEY}`);
+            const { data } = await axios.get(`https://www.omdbapi.com/?s=hulk&apikey=${import.meta.env.VITE_API_KEY}`);
             sethulk(data.Search);
         } catch (error) {
             console.log("Error: ", error);
