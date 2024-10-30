@@ -12,7 +12,7 @@ import Batman from "./Components/Batman";
 const App = () => {
     return (
         
-        <div className="bg-black  w-screen h-screen flex">
+        <div className="bg-black p-5 w-screen h-screen flex">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/deadpool" element={<Deadpool />} />
